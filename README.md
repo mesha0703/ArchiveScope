@@ -3,8 +3,8 @@
 A lightweight desktop application (Python + PySide6) to parse Sinumerik archives (.DSF, .ARC) and visualize/edit drive filter settings with instant Bode plots.
 App language: German; (+ English coming soon)
 
-![alt text](https://github.com/mesha0703/ArchiveScope/gallery/example1.png?raw=true)
-![alt text](https://github.com/mesha0703/ArchiveScope/gallery/example2.png?raw=true)
+![alt text](https://github.com/mesha0703/ArchiveScope/tree/main/gallery/example1.png?raw=true)
+![alt text](https://github.com/mesha0703/ArchiveScope/tree/main/gallery/example1.png?raw=true)
 
 ## Highlights
 
@@ -32,48 +32,31 @@ App language: German; (+ English coming soon)
     source .venv/bin/activate
     ```
 
-2. **Install dependencies (only if you want to run python script)**
+2. **Install dependencies**
     ```bash
     pip install -r requirements.txt
     ```
 
 3. **Run the app**
-    ```bash
-    # Run .EXE on windows
-    dist/ArchiveScope.exe
-    # …or python-script
-    python my_app/main.py
+    ```
+    python ArchiveScope/main.py
     ```
 
-## Using the App (at a glance)
+## Using the App
 
 1. **Open an archive**: Drag & drop into the main window or use `File → Open…`.
 2. **Explore**: Select a drive → controller → filter.
 3. **Tune**: Adjust parameters; Bode plot updates immediately.
 4. **Export**: Save modified settings via `File → Export…` (non-destructive; original files remain unchanged). (function coming soon)
 
-## Project Structure (logical)
+## Project Structure
 
-- `my_app/ui/…` — Qt widgets (e.g., archive surface, filter editor, Bode plot widget)
-- `my_app/domain/…` — Archive, Drive, Controller, Filter, Parameter, BitConfig, etc.
-- `my_app/config.py` — Parameter/label configuration and mappings
-- `my_app/main.py` — Application bootstrap
+- `ArchiveScope/ui/…` — Qt widgets (e.g., archive surface, filter editor, Bode plot widget)
+- `ArchiveScope/domain/…` — Archive, Drive, Controller, Filter, Parameter, BitConfig, etc.
+- `ArchiveScope/config.py` — Parameter/label configuration and mappings
+- `ArchiveScope/main.py` — Application bootstrap
 
 *(Actual paths may vary slightly; see repository.)*
-
-## Packaging (optional)
-
-### Windows (.exe with PyInstaller)
-```bash
-pyinstaller --noconfirm --windowed --name "ArchiveScope" my_app/main.py
-```
-The executable will be under `dist/CNCFilterVisualizer/`.
-
-### macOS (app bundle)
-```bash
-pyinstaller --noconfirm --windowed --name "CNCFilterVisualizer" my_app/main.py
-```
-Open the generated `.app` in `dist/`.
 
 ## Troubleshooting
 
@@ -105,4 +88,4 @@ See `LICENSE` in the repository (or clarify with the project owner if absent).
 
 ## TL;DR
 
-Create venv → `pip install -r requirements.txt` → run `python my_app/main.py` → drop a Sinumerik archive → tune filters with live Bode plots → export.
+Create venv → `pip install -r requirements.txt` → run `python ArchiveScope/main.py` → drop a Sinumerik archive → tune filters with live Bode plots → export.
