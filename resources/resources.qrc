@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/resources">
+    <file>Siemens_logo.png</file>
+    <file>arrow_drop_down_24dp.svg</file>
+    <file>arrow_right_24dp.svg</file>
+    <file>reset_24dp.svg</file>
+    <file>add_blck_24dp.svg</file>
+    <file>equal_blck_24dp.svg</file>
+    <file>add_smns_24dp.svg</file>
+    <file>equal_smns_24dp.svg</file>
+    <file>ArchiveScope_icon.ico</file>
+  </qresource>
+</RCC>
