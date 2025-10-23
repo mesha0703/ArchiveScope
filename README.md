@@ -3,6 +3,9 @@
 A lightweight desktop application (Python + PySide6) to parse Sinumerik archives (.DSF, .ARC) and visualize/edit drive filter settings with instant Bode plots.
 App language: German; (+ English coming soon)
 
+![alt text](https://github.com/mesha0703/ArchiveScope/gallery/example1.png?raw=true)
+![alt text](https://github.com/mesha0703/ArchiveScope/gallery/example2.png?raw=true)
+
 ## Highlights
 
 - **Archive ingestion**: Load exported Sinumerik archives (`.ARC ASCII or .DSF`).
